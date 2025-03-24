@@ -14,7 +14,7 @@ public:
 
 private slots:
     void on_addButton_clicked();
-    //void on_deleteButton_clicked();
+    void on_deleteButton_clicked();
     //void on_sortButton_clicked();
 
 private:

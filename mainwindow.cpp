@@ -22,10 +22,10 @@ void MainWindow::on_addButton_clicked()
     }
 }
 
-// void MainWindow::on_deleteButton_clicked()
-// {
-//     qDeleteAll(ui->listWidget->selectedItems());
-// }
+void MainWindow::on_deleteButton_clicked()
+{
+    qDeleteAll(ui->listWidget->selectedItems());
+}
 
 // void MainWindow::on_sortButton_clicked()
 // {
