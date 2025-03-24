@@ -1,3 +1,4 @@
+#include "ui_mainwindow.h"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -15,9 +16,10 @@ public:
 private slots:
     void on_addButton_clicked();
     void on_deleteButton_clicked();
-    //void on_sortButton_clicked();
+    void on_sortButton_clicked();
 
 private:
     Ui::MainWindow *ui;
-    bool sortOrder = false; // false - по возрастанию, true - по убыванию
+    bool sortOrder = false;
 };
+

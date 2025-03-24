@@ -46,27 +46,27 @@ public:
         centralwidget->setObjectName("centralwidget");
         addButton = new QPushButton(centralwidget);
         addButton->setObjectName("addButton");
-        addButton->setGeometry(QRect(10, 70, 201, 51));
+        addButton->setGeometry(QRect(10, 130, 201, 51));
         addButton->setStyleSheet(QString::fromUtf8("font: italic 11pt \"Comfortaa\";\n"
 "color: rgb(51, 209, 122);"));
         deleteButton = new QPushButton(centralwidget);
         deleteButton->setObjectName("deleteButton");
-        deleteButton->setGeometry(QRect(330, 70, 221, 51));
+        deleteButton->setGeometry(QRect(340, 130, 221, 51));
         deleteButton->setStyleSheet(QString::fromUtf8("font: italic 11pt \"Comfortaa\";\n"
 "color: rgb(237, 51, 59);"));
         deleteButton->setIconSize(QSize(32, 32));
         deleteButton->setCheckable(false);
         listWidget = new QListWidget(centralwidget);
         listWidget->setObjectName("listWidget");
-        listWidget->setGeometry(QRect(10, 130, 901, 291));
+        listWidget->setGeometry(QRect(10, 210, 901, 291));
         listWidget->setStyleSheet(QString::fromUtf8("color: rgb(222, 221, 218);"));
         listWidget->setSortingEnabled(true);
         lineEdit = new QLineEdit(centralwidget);
         lineEdit->setObjectName("lineEdit");
-        lineEdit->setGeometry(QRect(10, 0, 901, 61));
+        lineEdit->setGeometry(QRect(10, 40, 901, 61));
         sortButton = new QPushButton(centralwidget);
         sortButton->setObjectName("sortButton");
-        sortButton->setGeometry(QRect(670, 70, 241, 51));
+        sortButton->setGeometry(QRect(670, 130, 241, 51));
         sortButton->setStyleSheet(QString::fromUtf8("font: italic 11pt \"Comfortaa\";\n"
 "alternate-background-color: rgb(192, 97, 203);\n"
 "border-top-color: rgb(51, 209, 122);"));

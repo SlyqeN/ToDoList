@@ -27,8 +27,12 @@ void MainWindow::on_deleteButton_clicked()
     qDeleteAll(ui->listWidget->selectedItems());
 }
 
-// void MainWindow::on_sortButton_clicked()
-// {
-//     ui->listWidget->sortItems(sortOrder ? Qt::DescendingOrder : Qt::AscendingOrder);
-//     sortOrder = !sortOrder;
-// }
+void MainWindow::on_sortButton_clicked()
+{
+    ui->listWidget->sortItems(sortOrder ? Qt::DescendingOrder : Qt::AscendingOrder);
+    sortOrder = !sortOrder;
+}
+
+MainWindow::~MainWindow() {
+    delete ui;
+}
