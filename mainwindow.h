@@ -1,5 +1,8 @@
-#include "ui_mainwindow.h"
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
+
 #include <QMainWindow>
+#include <QPropertyAnimation>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -10,8 +13,11 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+protected:
+    bool eventFilter(QObject *watched, QEvent *event) override;
 
 private slots:
     void on_addButton_clicked();
@@ -20,6 +26,11 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    bool sortOrder = false;
-};
+    bool m_showCompletedFirst = true;
 
+    void setupStyles();
+    void setupAnimations();
+    void performSort();
+    void updateButtonText();
+};
+#endif
